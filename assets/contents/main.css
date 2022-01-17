@@ -75,13 +75,24 @@
 
 .header-qr {
     width: 175px;
-    padding: 8px;
+    padding: 10px;
     background-color: var(--white-color);
     position: absolute;
     left: 0;
-    top: 100%; /* 100% chiều cao thằng chứa nó */
+    top:118%; /* 100% chiều cao thằng chứa nó */
     border-radius: 2px;
     display: none;
+    animation: fadeIn ease-in 0.4s;
+}
+
+.header-qr::before {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -16px;
+    height: 20px;
+    content: "";
+    display: block;
 }
 
 .qr-show:hover .header-qr {
