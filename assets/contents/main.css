@@ -1,0 +1,111 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0,#fe6433, #f53e2d);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.item {
+    margin: 0 8px;
+    position: relative;
+    min-height: 26px;
+}
+
+.item, 
+.item-link {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.item:hover, 
+.item-link:hover,
+.icon-link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.item-strong {
+    font-weight: 500;
+}
+
+.item-separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #FB9086;
+    height: 17px;
+    right: -10.4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-link {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.nav-icon {
+    font-size: 17px;
+    margin: 0 5px;
+}
+
+.item, 
+.item-link,
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-label {
+    cursor: text;
+    color: var(--white-color);
+}
+
+/* Header QR Code */
+
+.header-qr {
+    width: 175px;
+    padding: 8px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 100%; /* 100% chiều cao thằng chứa nó */
+    border-radius: 2px;
+    display: none;
+}
+
+.qr-show:hover .header-qr {
+    display: block;
+}
+
+.qr-img {
+    width: 100%;
+    
+}
+
+.img-apps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-icon-link:first-child {
+    margin-left: 10px;
+}
+
+.app-icon-link:nth-child(2) {
+    margin-right: 10px;
+}
+
+.app-icon {
+    height: 20px;
+}
